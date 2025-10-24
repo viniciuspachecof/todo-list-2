@@ -3,6 +3,7 @@ import { cva } from 'class-variance-authority';
 export const badgeVariants = cva('inline-flex items-center justify-center rounded-full', {
   variants: {
     variant: {
+      none: '',
       primary: 'bg-green-light',
       secondary: 'bg-pink-light',
     },
@@ -19,8 +20,20 @@ export const badgeVariants = cva('inline-flex items-center justify-center rounde
 export const badgeTextVariants = cva('', {
   variants: {
     variant: {
+      none: '',
       primary: 'text-green-dark',
       secondary: 'text-pink-dark',
     },
+  },
+});
+
+export const badgeSkeletonVariants = cva('', {
+  variants: {
+    size: {
+      sm: 'w-6 h-6',
+    },
+  },
+  defaultVariants: {
+    size: 'sm',
   },
 });
