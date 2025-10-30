@@ -14,11 +14,15 @@ export const buttonIconVariants = cva('inline-flex items-center justify-center c
     disabled: {
       true: 'opacity-50 pointer-events-none',
     },
+    handling: {
+      true: 'pointer-events-none',
+    },
   },
   defaultVariants: {
     variant: 'primary',
     size: 'sm',
     disabled: false,
+    handling: false,
   },
 });
 

@@ -11,11 +11,15 @@ export const buttonVariants = cva('flex items-center justify-center cursor-point
     disabled: {
       true: 'opacity-50 pointer-events-none',
     },
+    handling: {
+      true: 'pointer-events-none',
+    },
   },
   defaultVariants: {
     variant: 'primary',
     size: 'md',
     disabled: false,
+    handling: false,
   },
 });
 
